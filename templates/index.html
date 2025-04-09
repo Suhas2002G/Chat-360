@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-360</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-avatar"></div>
+            <div class="chat-header-text">
+                <div class="chat-title">Chat-360 AI Assistant</div>
+                <div class="chat-status">Online • Ready to help</div>
+            </div>
+        </div>
+        
+        <div class="chat-messages">
+            <div class="message bot-message">
+                <div class="message-content-wrapper">
+                    <div>Hello! I'm your AI assistant. How can I help you today?</div>
+                    <div class="message-time">10:00 AM</div>
+                </div>
+            </div>
+            
+            <div class="message user-message">
+                <div class="message-content-wrapper">
+                    <div>Hi there! Can you help me find information about web design?</div>
+                    <div class="message-time">10:01 AM</div>
+                </div>
+            </div>
+            
+            <div class="message bot-message">
+                <div class="message-content-wrapper">
+                    <div>Of course! I'd be happy to help with web design. What specific aspect are you interested in? UI/UX, responsive design, or something else?</div>
+                    <div class="message-time">10:01 AM</div>
+                </div>
+            </div>
+            
+            <div class="typing-indicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+        
+        <div class="suggested-replies">
+            <div class="suggestion">UI/UX Design</div>
+            <div class="suggestion">Responsive Design</div>
+            <div class="suggestion">Color Theory</div>
+            <div class="suggestion">CSS Frameworks</div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" placeholder="Type your message here...">
+            <button class="send-button">
+                <span class="send-icon"></span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
