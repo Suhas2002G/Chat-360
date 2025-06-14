@@ -9,7 +9,10 @@ load_dotenv(".env")
 if not os.environ.get("GROQ_API_KEY"):
     os.environ["GROQ_API_KEY"] = getpass.getpass("Enter API key for Groq: ")
 
+
+
 class Response:
+    '''Provides response to user based on previous 5 context'''
     def store_chat(self, user_input, bot_response):
         """Store conversation history in session, ensuring it runs only within a request context."""
         if "chat_history" not in session:
